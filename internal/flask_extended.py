@@ -1,9 +1,9 @@
 from flask import Flask
-from context import ClientContext
+import context
 
 
 class FlaskExtended(Flask):
-    clientCtx: ClientContext
+    clientCtx: context.ClientContext
     
     
     def __init__(self, *args, **kwargs):
